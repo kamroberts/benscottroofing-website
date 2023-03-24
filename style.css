@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	font-size: calc(min(max(16px, 2vw), 24px));
 }
 
 div {
@@ -16,18 +17,13 @@ body {
 	background-color: #f4f4f4;
 	color: #333;
 	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
 	line-height: 1.5;
+	min-height: 100%
+	font-size: calc(min(max(16px, 2vw), 24px));
 }
 
 html {
 	height: 100%;
-}
-
-body {
-	min-height: 100%;
-	font-size: calc(min(max(16px, 2vw), 24px));
-
 }
 
 /* Style the header section */
@@ -625,8 +621,8 @@ a:hover {
 }
 
 .slide {
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 	display: none;
 	position: relative;
 }
@@ -654,7 +650,7 @@ a:hover {
 	position: absolute;
 	top: 100%;
 	transform: translateY(-50%);
-	width: 50px;
+	width: 5vw;
 	height: 50px;
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
@@ -745,7 +741,6 @@ a:hover {
 img {
 	max-width: 100%;
 	height: auto;
-	padding-bottom: 0;
 }
 
 /* Style the form */

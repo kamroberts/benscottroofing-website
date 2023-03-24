@@ -25,18 +25,7 @@ function sendMail() {
     window.location = "mailto:ben__scott1@hotmail.ca?subject=" + subject + '&body=' + body + '%0D%0A' + email + '%0D%0A' + phone + '%0D%0A' + message;
 }
 
-// Touch event handling
-document.addEventListener('touchstart', function (e) {
-    e.preventDefault();
-}, { passive: false });
 
-document.addEventListener('touchmove', function (e) {
-    e.preventDefault();
-}, { passive: false });
-
-document.addEventListener('touchend', function (e) {
-    e.preventDefault();
-}, { passive: false });
 
 
 
