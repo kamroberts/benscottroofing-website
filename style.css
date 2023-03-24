@@ -463,12 +463,11 @@ main .column {
 
 /* Style the footer section */
 footer {
-	background-color: #333; 
+	background-color: #333;
 	color: #fff;
-	padding: 0 20vw;
+	padding: 20px;
 	padding-top: 0;
 	text-align: center;
-	justify-content: space-between;
 }
 
 footer p {
@@ -479,7 +478,9 @@ footer p {
 .container {
 	max-width: 1200px;
 	margin: auto;
-	padding: 40px;
+	padding: 1vw;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .footer-row {
@@ -495,24 +496,25 @@ footer p {
 
 .footer-col {
 	flex: 1;
+	padding-top: 2.5%;
 }
 
 .footer-col h4 {
 	font-size: 20px;
-	margin-bottom: 20px;
 	position: relative;
+	margin-bottom: 1vw;
 }
 
 .footer-col h4::before {
 	align-self: start;
 	content: "";
 	position: absolute;
-	bottom: -10px;
+	bottom: 0.25vw;
 	width: 75px;
 	height: 2px;
 	background-color: #0077be;
 	box-sizing: border-box;
-}
+} 
 
 .footer-col ul {
 	list-style: none;
@@ -565,6 +567,16 @@ footer p {
 	.row {
 		flex-direction: column;
 	}
+	.footer-col {
+		width: 100%;
+	}
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+	.row {
+		flex-direction: column;
+	}
 
 	.footer-col {
 		width: 100%;
@@ -608,8 +620,7 @@ a:hover {
 
 /* project page */
 .slider {
-	width: auto;
-	height: 100%;
+	width: auto;;
 
 }
 
