@@ -211,7 +211,7 @@ header p {
 header img {
 	display: block;
 	max-width: 200px;
-	margin: 0 auto 20px;
+	margin: 0 auto 0;
 }
 
 .header-image nav {
@@ -354,8 +354,8 @@ main image {
 }
 
 .footer-image {
-	width: 100%;
-	height: 100%;
+    max-width: 200px;
+	margin: 0 auto;
 	overflow: hidden;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
@@ -461,8 +461,7 @@ main .column {
 footer {
 	background-color: #333;
 	color: #fff;
-	padding: 20px;
-	padding-top: 0;
+	padding: 1vw;
 	text-align: center;
 }
 
@@ -472,11 +471,12 @@ footer p {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1600px;
 	margin: auto;
-	padding: 1vw;
-	padding-bottom: 0;
-	margin-bottom: 0;
+}
+
+footer ul {
+	list-style: none;
 }
 
 .footer-row {
@@ -491,21 +491,22 @@ footer p {
 }
 
 .footer-col {
-	flex: 1;
-	padding-top: 2.5%;
+	width: 20%;
+	margin: 1vw 0 1vw 0;
 }
 
 .footer-col h4 {
 	font-size: 20px;
-	position: relative;
+	color: #fff;
 	margin-bottom: 1vw;
+	position: relative;
+	font-weight: 300;
 }
 
 .footer-col h4::before {
-	align-self: start;
-	content: "";
+	content: '';
 	position: absolute;
-	bottom: 0.25vw;
+	bottom: -2.5px;
 	width: 75px;
 	height: 2px;
 	background-color: #0077be;
@@ -559,23 +560,13 @@ footer p {
 }
 
 /*responsive*/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 	.row {
 		flex-direction: column;
 	}
 	.footer-col {
-		width: 100%;
-	}
-}
-
-/*responsive*/
-@media (max-width: 768px) {
-	.row {
-		flex-direction: column;
-	}
-
-	.footer-col {
-		width: 100%;
+		width: 50%;
+		margin: 0 0 2vw 0;
 	}
 }
 
