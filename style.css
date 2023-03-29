@@ -18,7 +18,7 @@ body {
 	color: #333;
 	font-family: "Open Sans", sans-serif;
 	line-height: 1.5;
-	min-height: 100%
+	min-height: 100%;
 	font-size: calc(min(max(16px, 2vw), 24px));
 }
 
