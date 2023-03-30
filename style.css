@@ -60,7 +60,14 @@ header nav a:hover {
 
 .header-image-navbar {
 	position: absolute;
-	top: 87.5%;
+	transform: translateY(40%);
+}
+
+@media (max-width: 612px) {
+	.header-image-navbar {
+		transform: translateY(50%);
+
+	}
 }
 
 .header-image nav {
@@ -120,9 +127,6 @@ header nav a:hover {
 		margin-top: 20px;
 	}
 
-	.header-image nav ul {
-		flex-direction: column;
-	}
 }
 
 /* Set style sheet across different browsers */
