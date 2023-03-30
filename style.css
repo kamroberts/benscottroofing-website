@@ -5,7 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
-	font-size: calc(min(max(16px, 2vw), 24px));
+	font-size: 16px;
 }
 
 div {
@@ -19,7 +19,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	line-height: 1.5;
 	min-height: 100%;
-	font-size: calc(min(max(16px, 2vw), 24px));
+	font-size: 16px;
 }
 
 html {
@@ -302,36 +302,52 @@ header img {
 	height: auto;
 }
 
+.header-container h1 {
+	font-size: 24px;
+}
+
+.header-container p {
+    font-size: 18px;
+}
+
 .header-image {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 514px;
+	place-items: center;
+	display: grid;
+
+}
+
+.header-image::before {
+	content: "";
+	width: 100vw;
+	height: 514px;
+	position: absolute;
+	background-image: url(headerphoto3.jpg);
+	filter: brightness(60%) contrast(120%) saturate(120%) grayscale(0.5) hue-rotate(0deg) sepia(0.5) blur(4px);
+	background-size: cover;
+}
+
+.header-image .container {
+	position: relative;
+	height: 40px;
+	margin: auto;
+}
+
+.header-text {
+	color:#fff;
+	position: absolute;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.5;
+	filter: none;
 }
 
 .header-image img {
 	display: block;
-	width: 100%;
-	height: auto;
+	background-size: cover;
 	filter: brightness(60%) contrast(120%) saturate(120%) grayscale(0.5) hue-rotate(0deg) sepia(0.5) blur(4px);
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-}
-
-.header-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, 250%);
-	text-align: center;
-	color: #fff;
-}
-
-.header-text h2 {
-	position: relative;
-	;
-}
-
-.header-text p {
-	font-size: 2rem;
-	margin: 0;
 }
 
 /* Style the main content section */
@@ -389,7 +405,7 @@ section {
 }
 
 section h2 {
-	font-size: 36px;
+	font-size: 24px;
 	margin-bottom: 20px;
 }
 
@@ -470,7 +486,7 @@ footer p {
 	margin: 0;
 }
 
-.container {
+.footer .container {
 	max-width: 1250px;
 	margin: auto;
 }
@@ -569,10 +585,6 @@ footer ul {
 		margin: 0 0 2vw 0;
 	}
 
-	.container {
-		margin-top: 2vw;
-	}
-
 	.footer-image {
 		max-width: 160px;
 	}
@@ -583,6 +595,10 @@ footer ul {
 
 	.footer-col ul li:not(:last-child) {
 		margin: 1.5vw 0 0 0;
+	}
+
+	.footer .container {
+		margin-top: 2vw;
 	}
 }
 
