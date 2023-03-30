@@ -66,7 +66,7 @@ header nav a:hover {
 @media (max-width: 612px) {
 	.header-image-navbar {
 		transform: translateY(50%);
-
+		width: fit-content;
 	}
 }
 
