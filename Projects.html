@@ -13,7 +13,6 @@
 			max-height: 100vh;
 			max-width: 100vw;
 		}
-		
 	</style>
 	<script defer src="app.js"></script>
 </head>
@@ -167,7 +166,9 @@
 		<div class="container">
 			<div class="footer-row">
 				<div class="footer-col">
-					<a href="index.html"><img src="logo2.png" alt="Ben Scott Roofing logo footer"></a></li>
+					<div class="footer-image">
+						<a href="index.html"><img src="logo2.png" alt="Ben Scott Roofing logo footer"></a></li>
+					</div>
 				</div>
 				<div class="footer-col">
 					<h4>Our Company</h4>
@@ -175,7 +176,7 @@
 						<li><a href="AboutUs.html">About Us</a></li>
 						<li><a href="Services.html">Our Services</a></li>
 						<li><a href="https://www.havelockmetal.com/products/" target="_blank"
-								rel="noopener noreferrer"></a>Our Supplier</a></li>
+								rel="noopener noreferrer">Visit Our Supplier</a></li>
 					</ul>
 				</div>
 				<div class="footer-col">
@@ -208,40 +209,40 @@
 		</div>
 		<p>&copy; 2023 Ben Scott Roofing. All rights reserved.</p>
 	</footer>
-<script>
-	var slideIndex = 1;
-    showSlides(slideIndex);
-    //Image slider
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		//Image slider
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("slide");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = slides.length }
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+		}
 
-    // Automatic slide transitions
-    var slideTimer = setInterval(function () {
-        plusSlides(1);
-    }, 3500);
+		// Automatic slide transitions
+		var slideTimer = setInterval(function () {
+			plusSlides(1);
+		}, 3500);
 
-</script>
+	</script>
 </body>
 
 </html>
