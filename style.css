@@ -58,10 +58,14 @@ header nav a:hover {
 	border-color: #0077be;
 }
 
+.header-image-navbar {
+	position: absolute;
+	top: 87.5%;
+}
+
 .header-image nav {
 	text-align: center;
 	list-style: none;
-	transform: translate(37.5%, -450%);
 	margin: 10px;
 }
 
@@ -113,7 +117,6 @@ header nav a:hover {
 	}
 
 	.header-image nav {
-		transform: translateY(0%);
 		margin-top: 20px;
 	}
 
@@ -217,7 +220,6 @@ header img {
 .header-image nav {
 	text-align: center;
 	list-style: none;
-	transform: translate(37.5%, -450%);
 	margin: 10px;
 }
 
@@ -315,7 +317,6 @@ header img {
 	height: 514px;
 	place-items: center;
 	display: grid;
-
 }
 
 .header-image::before {
@@ -341,6 +342,12 @@ header img {
 	font-size: 18px;
 	line-height: 1.5;
 	filter: none;
+
+}
+
+.header-text h2 {
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
 }
 
 .header-image img {
