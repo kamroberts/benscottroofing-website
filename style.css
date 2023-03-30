@@ -629,6 +629,7 @@ footer ul {
 	filter: blur(5px);
 	transform: translateX(-100%);
 	transition: all 1s;
+	overflow-y: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -662,7 +663,6 @@ a:hover {
 /* project page */
 .slider {
 	width: auto;;
-
 }
 
 .slide {
