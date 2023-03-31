@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 /* Style the page background */
 body {
 	background-color: #f4f4f4;
