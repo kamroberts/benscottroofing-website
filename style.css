@@ -3,8 +3,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow-x: hidden;
-
 }
 
 /* Style the page background */
@@ -16,7 +14,6 @@ body {
 	min-height: 100%;
 	font-size: 16px;
 	overflow-x: hidden;
-	padding: 1vw 1vw;
 }
 
 /* Style the header section */
@@ -56,7 +53,7 @@ header nav a:hover {
 	color: #0077be;
 }
 
-header nav a header h1 {
+header nav a h1 {
 	font-size: 48px;
 	margin-bottom: 10px;
 }
@@ -275,6 +272,7 @@ section p {
 	line-height: 1.3;
 }
 
+
 .wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -339,7 +337,7 @@ footer ul {
 	flex-wrap: wrap;
 }
 
-.row::after {
+.row:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -483,14 +481,9 @@ a:hover {
 	color: #004e80;
 }
 
-.projects-container {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 /* project page */
 .slider {
-	margin: 0 auto;
+	margin: auto;
 	max-width: 50%;
 	max-height: 60%;
 	position: relative;
@@ -616,7 +609,7 @@ a:hover {
 	text-align: center;
 	top: 55%;
 	transform: translateY(-50%);
-	width: 78px;
+	width: 80px;
 }
 
 .prev {
