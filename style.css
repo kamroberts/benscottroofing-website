@@ -11,7 +11,6 @@ body {
 	color: #333;
 	font-family: "Open Sans", sans-serif;
 	line-height: 1.5;
-	min-height: 100%;
 	font-size: 16px;
 	overflow-x: hidden;
 }
@@ -190,6 +189,7 @@ main {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 40px;
+
 }
 
 main img {
@@ -481,7 +481,7 @@ a:hover {
 	color: #004e80;
 }
 
-/* project page */
+/* Image slider styles */
 .slider-container {
 	max-width: 100%;
 	max-height: 100%;
@@ -502,6 +502,8 @@ a:hover {
 	position: relative;
 	width: 100%;
 }
+
+
 
 .slide:first-child {
 	display: block;
