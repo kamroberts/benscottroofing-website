@@ -67,17 +67,23 @@ header img {
 	margin: 0 auto 0;
 }
 
-/* Style the header image section */
-.header-image-navbar {
-	position: absolute;
-	transform: translateY(50%);
+.header-container {
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 
-@media (max-width: 817px) {
-	.header-image-navbar {
-		transform: translateY(75%);
-		width: fit-content;
-	}
+.header-container h1 {
+	font-size: 24px;
+}
+
+.header-container p {
+	font-size: 18px;
+}
+
+/* Style the header image section */
+.header-image-navbar {
+	margin-top: 50px;
 }
 
 .header-image nav {
@@ -100,12 +106,14 @@ header img {
 	display: block;
 	border: 1px solid #000;
 	padding: 10px 20px;
-	color: #333;
+	color: #fff;
 	text-decoration: none;
 	transition: border-color 0.3s ease, color 0.3s ease;
-	background-color: #fff;
+	background-color: transparent;
 	text-align: center;
 	border-radius: 10px;
+	margin: 10px;
+	font-size: 1em;
 }
 
 .header-image nav li {
@@ -115,72 +123,63 @@ header img {
 
 .header-image nav a {
 	display: inline-block;
-	border: 1px solid #000;
-	color: #333;
+	border: none;
+	color: #fff;
 	text-decoration: none;
 	transition: border-color 0.3s ease, color 0.3s ease;
-	background-color: #fff;
+	background-color: transparent;
 }
 
 .header-image nav a:hover {
 	border-color: #fff;
-	background-color: transparent;
-	color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Responsive styles for tablets and mobile devices */
 @media (max-width: 768px) {
-	header nav ul {
-		flex-direction: column;
-	}
-
-	.header-image nav {
-		margin-top: 20px;
-	}
-}
-
-.header-container {
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-
-.header-container h1 {
-	font-size: 24px;
-}
-
-.header-container p {
-	font-size: 18px;
+	.header-text {
+		font-size: 1.5em;
+		}
+		
+		.header-image-navbar {
+		margin-top: 30px;
+		}
+		
+		.header-image a {
+			font-size: 1.2em;
+		}
 }
 
 .header-image {
-	width: 100vw;
+	width: 100%;
 	height: 514px;
-	place-items: center;
-	display: grid;
+	position: relative;
+	overflow: hidden;
 }
 
 .header-image::before {
 	content: "";
-	width: 100vw;
-	height: 514px;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	background-image: url(headerphoto3.jpg);
-	filter: brightness(60%) contrast(120%) saturate(120%) grayscale(0.5) hue-rotate(0deg) sepia(0.5) blur(4px);
+	filter: brightness(80%) contrast(90%) saturate(90%) grayscale(0.2) hue-rotate(0deg) sepia(0.2) blur(2px);
 	background-size: cover;
+	z-index: -1;
 }
 
 .header-text {
 	color: #fff;
-	position: absolute;
 	text-align: center;
-	font-size: 16px;
+	font-size: 2em;
 	line-height: 1.5;
-	filter: none;
+	z-index: 1;
+	position: absolute;
+	top: 0;
 }
 
 .header-text h2 {
-	font-size: 1.5em;
+	font-size: 2em;
 	font-family: "Open Sans", sans-serif;
 }
 
