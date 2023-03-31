@@ -245,7 +245,7 @@ section h2 {
 }
 
 section ul {
-	list-style: circle;
+	list-style: none;
 	margin-left: 20px;
 }
 
@@ -482,6 +482,11 @@ a:hover {
 }
 
 /* project page */
+.slider-container {
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+}
 .slider {
 	margin: auto;
 	max-width: 50%;
@@ -501,11 +506,25 @@ a:hover {
 	display: block;
 }
 
-.slide img {
+.slider-img {
 	background-position: center;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+}
+
+.slide-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+.slide-heading {
+	margin-bottom: 10px;
 }
 
 .slide nav a.sn1:hover {
@@ -531,22 +550,25 @@ a:hover {
 	place-items: center;
 	display: flex;
 	transform: translateX(70%);
+	bottom: 20px;
+	left: 50%;
 }
 
 .slider-navbar nav {
 	text-align: center;
 	list-style: none;
-	margin: 10px;
+	margin: 0;
 }
 
 .slider-navbar nav ul {
 	display: flex;
 	list-style: none;
-	margin: 20px;
+	margin: 0;
 }
 
 .slider-navbar li {
 	display: inline-block;
+	margin: 0 10px;
 }
 
 .slider-navbar a.sn1 {
@@ -607,7 +629,7 @@ a:hover {
 	height: 50px;
 	position: absolute;
 	text-align: center;
-	top: 55%;
+	top: 50%;
 	transform: translateY(-50%);
 	width: 80px;
 }
