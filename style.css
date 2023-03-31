@@ -3,10 +3,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-html {
 	overflow-x: hidden;
+
 }
 
 /* Style the page background */
@@ -18,6 +16,7 @@ body {
 	min-height: 100%;
 	font-size: 16px;
 	overflow-x: hidden;
+	padding: 1vw 1vw;
 }
 
 /* Style the header section */
