@@ -534,7 +534,7 @@ a:hover {
 	position: absolute;
 	place-items: center;
 	display: flex;
-	transform: translateX(75%);
+	transform: translateX(70%);
 }
 
 .slider-navbar nav {
