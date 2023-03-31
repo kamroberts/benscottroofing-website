@@ -32,7 +32,7 @@
 		</div>
 	</header>
 	<main>
-		<form onsubmit="sendMail(), formSubmitConfirmation()">
+		<form id="contact-form">
 			<h3>Send us an Email</h3>
 			<input type="hidden" name="_subject" id="subject" value="New Email inquiry via Website">
 			<div class="field">
@@ -103,6 +103,13 @@
 		<p>&copy; 2023 Ben Scott Roofing. All rights reserved.</p>
 	</footer>
 	<script>
+		const form = document.getElementById("contact-form");
+		form.addEventListener("submit", function (event) {
+			event.preventDefault();
+			sendMail();
+			formSubmitConfirmation();
+		});
+
 		function formSubmitConfirmation() {
 			alert("Thank you for contacting us. We have received your message and will get back to you as soon as possible.");
 		}
