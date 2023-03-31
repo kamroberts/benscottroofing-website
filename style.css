@@ -510,15 +510,97 @@ a:hover {
 	max-width: 100%;
 }
 
+.slide nav a.sn1:hover {
+	border-color: #000;
+	color: #fff;
+	background-color: #000;
+}
+
+.slide nav a.sn2:hover {
+	border-color: #000;
+	color: #000;
+	background-color: #fff;
+}
+
 .slider::after {
 	clear: both;
 	content: "";
 	display: table;
 }
 
+.slider-navbar {
+	position: absolute;
+	place-items: center;
+	display: flex;
+	transform: translateX(75%);
+}
+
+.slider-navbar nav {
+	text-align: center;
+	list-style: none;
+	margin: 10px;
+}
+
+.slider-navbar nav ul {
+	display: flex;
+	list-style: none;
+	margin: 20px;
+}
+
+.slider-navbar li {
+	display: inline-block;
+}
+
+.slider-navbar a.sn1 {
+	display: block;
+	border: 1px solid #000;
+	padding: 5px 10px;
+	color: #333;
+	text-decoration: none;
+	transition: border-color 0.3s ease, color 0.3s ease;
+	background-color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+
+.slider-navbar a.sn2 {
+	display: block;
+	border: 1px solid #000;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	transition: border-color 0.3s ease, color 0.3s ease;
+	background-color: #000;
+	text-align: center;
+	font-size: 14px;
+}
+
+.slider-navbar nav li {
+	margin: 0 10px;
+	border-radius: 10px;
+}
+
+.slider-navbar nav a.sn1 {
+	display: inline-block;
+	border: 1px solid #000;
+	color: #333;
+	text-decoration: none;
+	transition: border-color 0.3s ease, color 0.3s ease;
+	background-color: #fff;
+}
+
+.slider-navbar nav a.sn2 {
+	display: inline-block;
+	border: 1px solid #000;
+	color: #fff;
+	text-decoration: none;
+	transition: border-color 0.3s ease, color 0.3s ease;
+	background-color: #000;
+}
+
 .prev,
 .next {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.75);
 	color: #fff;
 	cursor: pointer;
 	font-size: 30px;
