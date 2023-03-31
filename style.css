@@ -72,12 +72,12 @@ header img {
 /* Style the header image section */
 .header-image-navbar {
 	position: absolute;
-	transform: translateY(40%);
+	transform: translateY(50%);
 }
 
-@media (max-width: 612px) {
+@media (max-width: 817px) {
 	.header-image-navbar {
-		transform: translateY(50%);
+		transform: translateY(75%);
 		width: fit-content;
 	}
 }
