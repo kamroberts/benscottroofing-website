@@ -5,6 +5,18 @@
 	box-sizing: border-box;
 }
 
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+
 /* Style the page background */
 body {
 	background-color: #f4f4f4;
@@ -21,8 +33,8 @@ header {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	text-align: center;
-	opacity: 0;
-	transform: translateY(-50%);
+	opacity: 1;
+	transform: translateY(0);
 	animation: fade-in 0.5s ease forwards, slide-down 1s ease forwards;
 }
 
@@ -81,11 +93,20 @@ header img {
 	font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	header nav ul {
 		flex-direction: column;
 	}
+
+	header nav li {
+		margin: 10px 0;
+	}
+
+	main .column {
+		padding: 10px;
+	}
 }
+
 
 /* Style the header image section */
 .header-image-navbar {
@@ -179,6 +200,12 @@ header img {
 .header-text h2 {
 	font-size: 2em;
 	font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 876px) {
+	.header-text {
+		top: 10%;
+	}
 }
 
 /* Style the main content section */
