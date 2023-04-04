@@ -213,6 +213,19 @@ main img {
 	padding-left: 10px;
 }
 
+main .wrapper {
+	flex-wrap: wrap;
+}
+
+main .column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+/* style all sections */
 section {
 	margin-bottom: 40px;
 }
@@ -254,18 +267,6 @@ section p {
 .wrapper {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-main .wrapper {
-	flex-wrap: wrap;
-}
-
-main .column {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	box-sizing: border-box;
 }
 
 #manufacturerWarranty a h2 {
@@ -409,7 +410,7 @@ footer ul {
 	margin-bottom: 10px;
 }
 
-/*responsive*/
+/*responsive footer*/
 @media (max-width: 767px) {
 	.row {
 		flex-direction: column;
