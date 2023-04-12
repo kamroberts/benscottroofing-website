@@ -743,7 +743,7 @@ a:hover {
 
 	.slider-navbar {
 		right: calc(2.5% + 1vw);
-		bottom: 15px;
+		bottom: 20px;
 	}
 
 	.prev,
@@ -779,7 +779,7 @@ a:hover {
 	}
 
 	.slider-navbar li {
-		margin: 0 5px;
+		margin: 0 2px;
 	}
 
 	.slider-navbar a {
