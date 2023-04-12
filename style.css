@@ -545,7 +545,7 @@ a:hover {
 
 .slider {
 	margin: auto;
-	max-width: 50%;
+	max-width: 100%;
 	max-height: 60%;
 	position: relative;
 
@@ -917,8 +917,8 @@ a:hover {
 	}
 
 	.slider {
-		max-width: 70%;
-		max-height: 70%;
+		max-width: 100%;
+		max-height: 100%;
 		margin: auto;
 	}
 
