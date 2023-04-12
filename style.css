@@ -171,6 +171,7 @@ header img {
 	min-height: 514px;
 	position: relative;
 	overflow: hidden;
+	display: flex;
 }
 
 .header-image::before {
@@ -188,23 +189,30 @@ header img {
 .header-text {
 	color: #fff;
 	text-align: center;
-	font-size: 2em;
+	font-size: calc(1.5em + 1vw);
 	line-height: 1.5;
 	z-index: 1;
 	position: absolute;
 	top: 20%;
+	bottom: 40%;
+	bottom: 100%;
 	max-height: 280px;
 	margin: 10px;
+	display: flex;
 }
 
 .header-text h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: "Open Sans", sans-serif;
 }
 
 @media (max-width: 876px) {
 	.header-text {
 		top: 10%;
+	}
+
+	.header-text h2 {
+		font-size: calc(1.75em + 1vw);
 	}
 }
 
