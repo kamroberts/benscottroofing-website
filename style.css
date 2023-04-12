@@ -93,7 +93,26 @@ header img {
 	font-size: 18px;
 }
 
+/* Toggle button styles */
+.toggle-btn {
+	display: none;
+	background-color: transparent;
+	border: none;
+	color: #333;
+	font-size: 24px;
+	padding: 10px;
+	cursor: pointer;
+}
+
 @media (max-width: 768px) {
+	.header-nav {
+		display: none;
+	}
+	
+	header nav .toggle-btn {
+		display: block;
+	}
+
 	header nav ul {
 		flex-direction: column;
 	}
