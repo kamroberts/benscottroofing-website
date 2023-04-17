@@ -776,6 +776,10 @@ a:hover {
 		bottom: -20px;
 	}
 
+	#projectPage.dots {
+		bottom: -40px;
+	}
+
 	.dot {
 		height: 8px;
 		width: 8px;
