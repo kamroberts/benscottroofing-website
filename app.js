@@ -34,6 +34,21 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
+// Quote form
+function sendQuote() {
+    var subject = document.getElementById('subject').value;
+    var body = 'First Name: ' + document.getElementById('firstName').value;
+    var lastName = 'Last Name: ' + document.getElementById('lastName').value
+    var address = 'Address: ' + document.getElementById('address').value;
+    var city = 'City: ' + document.getElementById('city').value
+    var province = 'Province: ' + document.getElementById('province').value
+    var postal = 'Postal Code: ' + document.getElementById('postal').value
+    var phone = 'Phone: ' + document.getElementById('phone').value;
+    var email = 'Email: ' + document.getElementById('email').value;
+
+    
+}
+
 
 
 

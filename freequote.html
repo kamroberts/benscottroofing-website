@@ -19,7 +19,8 @@
 				<i class="fas fa-bars"></i>
 			</button>
 
-			<ul id="dropdown" class="header-nav">				<li><a href="index.html">Home</a></li>
+			<ul id="dropdown" class="header-nav">
+				<li><a href="index.html">Home</a></li>
 				<li><a href="AboutUs.html">About Us</a></li>
 				<li><a href="Services.html">Services</a></li>
 				<li><a href="Projects.html">Projects</a></li>
@@ -35,33 +36,47 @@
 		</div>
 	</header>
 	<main>
-		<form onsubmit="sendMail()">
+		<form id="quote-form">
 			<h3>Start Your Quote</h3>
 			<input type="hidden" name="_subject" id="subject" value="New Email inquiry via Website">
 			<div class="wrapper">
 				<div class="column">
 					<div class="field">
-						<input type="text" name="name" id="name" placeholder="Enter your name" required>
+						<input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
 						<i class="fas fa-user"></i>
 					</div>
 					<div class="field">
-						<input type="email" name="email" id="email" placeholder="Enter your email" required>
-						<i class="fas fa-envelope"></i>
+						<input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+						<i class="fas fa-user"></i>
 					</div>
 					<div class="field">
 						<input type="text" name="address" id="address" placeholder="Enter your address" required>
 						<i class="fas fa-map-marker-alt"></i>
 					</div>
 					<div class="field">
+						<input type="text" name="city" id="city" placeholder="Enter your city" required>
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="field">
+						<input type="text" name="province" id="province" placeholder="Enter your province" required>
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="field">
+						<input type="text" name="postal" id="postal" placeholder="Enter your postal code" required>
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="field">
+						<input type="email" name="email" id="email" placeholder="Enter your email" required>
+						<i class="fas fa-envelope"></i>
+					</div>
+					<div class="field">
 						<input type="text" name="phone" id="phone" placeholder="Enter your phone #" required>
 						<i class="fas fa-phone-alt"></i>
 					</div>
-					<div class="message">
-						<textarea name="message" id="message" placeholder="Enter your message" required></textarea>
-						<i class="fas fa-message"></i>
-					</div>
-					<input type="hidden" name="_autoresponse" value="Thank you for emailing Ben Scott Roofing">
-					<button type="submit" value="Send" id="sendButton">Send</button>
+				</div>
+			</div>
+			<button type="submit" value="Next" id="nextButton">Next</button>
+				
 		</form>
 	</main>
 	<footer class="footer">
@@ -111,6 +126,13 @@
 		</div>
 		<p>&copy; 2023 Ben Scott Roofing. All rights reserved.</p>
 	</footer>
+	<script>
+		const form = document.getElementById("contact-form");
+		form.addEventListener("submit", function (event) {
+			event.preventDefault();
+			sendQuote();
+		});
+	</script>
 </body>
 
 </html>
