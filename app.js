@@ -50,7 +50,7 @@ function fillInAddress() {
 function sendQuote() {
     var subject = document.getElementById('subject').value;
     var body = 'Name: ' + document.getElementById('name').value;
-    var address = 'Address: ' + details.value;
+    var address = 'Address: ' + place.value;
     var phone = 'Phone: ' + document.getElementById('phone').value;
     var email = 'Email: ' + document.getElementById('email').value;
 
