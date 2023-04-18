@@ -35,18 +35,26 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Quote form
+function initAutocomplete() {
+    var autocomplete;
+    var addressInput = document.querySelector('#address');
+    autocomplete = new google.maps.places.Autocomplete(addressInput);
+
+    autocomplete.addListener('place_changed', fillInAddress);
+};
+
+function fillInAddress() {
+    const place = autocomplete.getPlace();
+};
+
 function sendQuote() {
     var subject = document.getElementById('subject').value;
-    var body = 'First Name: ' + document.getElementById('firstName').value;
-    var lastName = 'Last Name: ' + document.getElementById('lastName').value
-    var address = 'Address: ' + document.getElementById('address').value;
-    var city = 'City: ' + document.getElementById('city').value
-    var province = 'Province: ' + document.getElementById('province').value
-    var postal = 'Postal Code: ' + document.getElementById('postal').value
+    var body = 'Name: ' + document.getElementById('name').value;
+    var address = 'Address: ' + details.value;
     var phone = 'Phone: ' + document.getElementById('phone').value;
     var email = 'Email: ' + document.getElementById('email').value;
 
-    
+    window.location = "mailto:ben__scott1@hotmail.ca?subject=" + subject + '&body=' + body + '%0D%0A' + email + '%0D%0A' + phone + '%0D%0A' + '%0D%0A' + address;
 }
 
 
