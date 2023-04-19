@@ -38,7 +38,7 @@
 	<main>
 		<form id="quote-form">
 			<h3>Start Your Quote</h3>
-			<input type="hidden" name="_subject" id="subject" value="New Email inquiry via Website">
+			<input type="hidden" name="_subject" id="subject" value="New Quote inquiry">
 			<div class="wrapper">
 				<div class="column">
 					<div class="field">
@@ -115,6 +115,7 @@
 		form.addEventListener("submit", function (event) {
 			event.preventDefault();
 			sendQuote();
+			formSubmitConfirmation();
 		});
 	</script>
 </body>

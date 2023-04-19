@@ -57,6 +57,9 @@ function sendQuote() {
     window.location = "mailto:ben__scott1@hotmail.ca?subject=" + subject + '&body=' + body + '%0D%0A' + email + '%0D%0A' + phone + '%0D%0A' + '%0D%0A' + address;
 }
 
+function formSubmitConfirmation() {
+    alert("Thank you for contacting us. We have received your message and will get back to you as soon as possible.");
+}
 
 
 
