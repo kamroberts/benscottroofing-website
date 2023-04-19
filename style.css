@@ -1005,6 +1005,7 @@ form textarea {
 	min-width: 100%;
 	outline: none;
 	padding: 10px;
+	resize: none;
 }
 
 form textarea {
