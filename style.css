@@ -293,6 +293,10 @@ main .wrapper {
 	flex-wrap: wrap;
 }
 
+#roofPrep.wrapper img{
+	max-height: 326px;
+}
+
 main .column {
 	flex: 1;
 	display: flex;
