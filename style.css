@@ -529,7 +529,7 @@ footer ul {
 	}
 }
 
-.hidden {
+/*.hidden {
 	filter: blur(5px);
 	opacity: 0;
 	transform: translateX(100%);
@@ -545,7 +545,7 @@ footer ul {
 		transition: none;
 	}
 }
-
+*/
 .show {
 	opacity: 1;
 	filter: blur(0);
